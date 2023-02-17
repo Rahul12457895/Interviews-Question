@@ -1,0 +1,127 @@
+Q-1 What are lists and tuples? What is the key difference between the two?
+Lists and Tuples are both sequence data types that can store a collection of objects in Python. 
+The objects stored in both sequences can have different data types. 
+Lists are represented with square brackets ['sara', 6, 0.19], while tuples are represented with parantheses ('ansh', 5, 0.97).
+
+Q-2 How would you convert a string into lowercase?
+
+We use the lower() method for this.
+'AyuShi'.lower()
+‘ayushi’
+
+To convert it into uppercase, then, we use upper().
+'AyuShi'.upper()
+"AYUSHI"
+
+Q-3 How do you get a list of all the keys in a dictionary?
+mydict = {'a':1,'b':2,'c':3,'e':5}
+mydict.keys()
+
+dict_keys([‘a’, ‘b’, ‘c’, ‘e’])
+
+Q-4 What is slicing?
+Slicing is a technique that allows us to retrieve only a part of a list, tuple, or string. For this, we use the slicing operator [].
+(1,2,3,4,5)[2:4]
+(3, 4)
+
+Q-5  What are functions in Python?
+A function is a block of code which is executed only when it is called. To define a Python function, the def keyword is used.
+
+Q-6 What is __init__?
+__init__ is a method or constructor in Python. 
+This method is automatically called to allocate memory when a new object/ instance of a class is created. 
+All classes have the __init__ method.
+
+Q-7 What is a lambda function?
+An anonymous function is known as a lambda function. This function can have any number of parameters but, can have just one statement.
+
+Example:
+1
+2
+a = lambda x,y : x+y
+print(a(5, 6))
+
+Q-8 What Does the // Operator Do?
+In Python, the / operator performs division and returns the quotient in the float.
+For example: 5 / 2 returns 2.5
+
+The // operator, on the other hand, returns the quotient in integer.
+For example: 5 // 2 returns 2
+
+Q-9  What are Python Modules?
+Files containing Python codes are referred to as Python Modules. 
+This code can either be classes, functions, or variables and saves the programmer time by providing the predefined functionalities when needed. 
+It is a file with “.py” extension containing an executable code.
+
+Commonly used built modules are listed below:
+
+os
+sys
+data time
+math
+random
+JSON
+
+Q-10 What is a dictionary in Python?
+Python dictionary is one of the supported data types in Python. 
+It is an unordered collection of elements. The elements in dictionaries are stored as key-value pairs. 
+Dictionaries are indexed by keys.
+
+Q-11 How to comment with multiple lines in Python?
+To add a multiple lines comment in python, all the line should be prefixed by #.
+
+Q-12 What is a map function in Python?
+The map() function in Python has two parameters, function and iterable. 
+The map() function takes a function as an argument and then applies that function to all the elements of an iterable, passed to it as another argument. 
+It returns an object list of results.
+
+For example:
+def calculateSq(n):
+return n*n
+numbers = (2, 3, 4, 5)
+result = map( calculateSq, numbers)
+print(result)
+
+Q-13 Write a command to open the file c:\hello.txt for writing?
+Command:
+
+f= open(“hello.txt”, “wt”)
+
+Q-14 What does len() do?
+len() is an inbuilt function used to calculate the length of sequences like list, python string, and array.
+
+my _list=[1,2,3,4,5]
+len(my_list)
+
+Q-15 What does *args and **kwargs mean?
+.*args: It is used to pass multiple arguments in a function.
+**kwargs: It is used to pass multiple keyworded arguments in a function in python.
+
+Q-16 What is the purpose of is, not and in operators?
+Operators are referred to as special functions that take one or more values(operands) and produce a corresponding result.
+
+is: returns the true value when both the operands are true  (Example: “x” is ‘x’)
+not: returns the inverse of the boolean value based upon the operands (example:”1” returns “0” and vice-versa.
+In: helps to check if the element is present in a given Sequence or not.
+
+Q-17 How can you generate random numbers in Python?
+This achieved with importing the random module,it is the module that is used to generate random numbers.
+
+Syntax:
+
+import random
+random.random # returns the  floating point random number between the range of [0,1].
+
+Q-18 What is Polymorphism in Python?
+Polymorphism is the ability of the code to take multiple forms. 
+Let’s say, if the parent class has a method named XYZ then the child class can also have a method with the same name XYZ having its own variables and parameters.
+
+Q-19 Define encapsulation in Python?
+encapsulation in Python refers to the process of wrapping up the variables and different functions into a single entity or capsule.
+Python class is the best example of encapsulation in python.
+
+Q-20 What is the difference between append() and extend() methods?
+Both append() and extend() methods are methods used to add elements at the end of a list.
+
+append(element): Adds the given element at the end of the list that called this append() method
+extend(another-list): Adds the elements of another list at the end of the list that called this extend() method
